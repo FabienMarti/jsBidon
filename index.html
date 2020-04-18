@@ -12,27 +12,26 @@
 
     <body>
         <main class="container">
-            <h1 class="text-center mb-5">Choisis la bonne combinaison de 3 valeurs</h1>
+            <h1 class="text-center mb-5">Choisis 3 valeurs !</h1>
+
+
+
             <div class="row text-center text-white">
-                <div class="col">
-                    <button class="btn btn-primary px-5" onclick=getValue(1);>1</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary px-5" onclick=getValue(2);>2</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary px-5" onclick=getValue(3);>3</button>
-                </div>
+                <button class="col btn btn-primary border" onclick=getValue(1);>1</button>
+                <button class="col btn btn-primary border" onclick=getValue(2);>2</button>
+                <button class="col btn btn-primary border" onclick=getValue(3);>3</button>
             </div>
-            <div class="row bg-info mt-5">
-                <p id="textError" class="text-center m-auto h1"></p>
+            <div class="text-center mt-1">
+                <button class="btn btn-danger" onclick=checkResult();>Valider</button>
             </div>
-            <div class="row bg-info mt-5">
+            <div class="bg-info mt-5">
                 <p id="text" class="text-center m-auto h1"></p>
             </div>
-            <div class="text-center mt-5">
-                <button class="btn btn-danger" onclick=checkResult();>Commencer</button>
+            <div class="bg-info mt-5">
+                <p id="textError" class="text-center m-auto h1"></p>
             </div>
+
+
         </main>
     </body>
     <script src="assets/js/script.js"></script>
