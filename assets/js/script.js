@@ -12,13 +12,14 @@ function checkResult() {
     if (array[0] == 2 && array[1] == 2 && array[2] == 1) {
         document.getElementById('textError').innerHTML = "C'est gagné !";
         document.getElementById('text').innerHTML = " ";
-        array = [];
+
     }
     else {
         document.getElementById('textError').innerHTML = "Raté !";
         document.getElementById('text').innerHTML = " ";
-        array = [];
+
     }
+    array = [];
 }
 
 
