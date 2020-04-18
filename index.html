@@ -13,25 +13,21 @@
     <body>
         <main class="container">
             <h1 class="text-center mb-5">Choisis 3 valeurs !</h1>
-
-
-
             <div class="row text-center text-white">
                 <button class="col btn btn-primary border" onclick=getValue(1);>1</button>
                 <button class="col btn btn-primary border" onclick=getValue(2);>2</button>
                 <button class="col btn btn-primary border" onclick=getValue(3);>3</button>
             </div>
-            <div class="text-center mt-1">
-                <button class="btn btn-danger" onclick=checkResult();>Valider</button>
+
+            <div class="bg-info mt-5">
+                <p id="textError" class="text-center m-auto h1">Tes choix</p>
             </div>
             <div class="bg-info mt-5">
                 <p id="text" class="text-center m-auto h1"></p>
             </div>
-            <div class="bg-info mt-5">
-                <p id="textError" class="text-center m-auto h1"></p>
+            <div class="text-center mt-1">
+                <button class="col btn btn-danger" onclick=checkResult();>Valider</button>
             </div>
-
-
         </main>
     </body>
     <script src="assets/js/script.js"></script>

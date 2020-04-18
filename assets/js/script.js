@@ -1,7 +1,7 @@
 var array = [];
 function getValue(val) {
     array.push(val);
-    document.getElementById('text').innerHTML += val + "<br>";
+    document.getElementById('text').innerHTML += val + " ";
     if (array.length >= 4) {
         document.getElementById('textError').innerHTML = "3 Elements MAX";
         document.getElementById('text').innerHTML = " ";
