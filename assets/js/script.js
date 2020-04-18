@@ -3,17 +3,20 @@ function getValue(val) {
     array.push(val);
     document.getElementById('text').innerHTML += val + "<br>";
     if (array.length >= 4) {
-        document.getElementById('text').innerHTML = "3 Elements MAX";
+        document.getElementById('textError').innerHTML = "3 Elements MAX";
+        document.getElementById('text').innerHTML = " ";
         array = [];
     }
 }
 function checkResult() {
     if (array[0] == 2 && array[1] == 2 && array[2] == 1) {
-        document.getElementById('text').innerHTML = "C'est gagné !";
+        document.getElementById('textError').innerHTML = "C'est gagné !";
+        document.getElementById('text').innerHTML = " ";
         array = [];
     }
     else {
-        document.getElementById('text').innerHTML = "Raté !";
+        document.getElementById('textError').innerHTML = "Raté !";
+        document.getElementById('text').innerHTML = " ";
         array = [];
     }
 }
